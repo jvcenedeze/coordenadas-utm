@@ -1,0 +1,33 @@
+{
+  "name": "coordenadas-utm",
+  "version": "1.0.0",
+  "description": "Converte coordenadas geográficas em UTM e vice-versa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvcenedeze/coordenadas-utm.git"
+  },
+  "keywords": [
+    "coordenadas",
+    "geográficas",
+    "UTM",
+    "conversor",
+    "converter",
+    "transformar",
+    "transformação",
+    "latitude",
+    "longitude",
+    "mapas",
+    "cartografia"
+  ],
+  "author": "jvcenedeze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jvcenedeze/coordenadas-utm/issues"
+  },
+  "homepage": "https://github.com/jvcenedeze/coordenadas-utm#readme",
+  "dependencies": {}
+}
