@@ -1,6 +1,6 @@
 # coordenadas-utm
 
-Coordenadas-utm é uma biblioteca JavaScript que transforma coordenadas geográficas em grau para coordenadas UTM, e vice-versa, de mandeira simplificada.
+Coordenadas-utm é uma biblioteca JavaScript que transforma coordenadas geográficas em grau para coordenadas UTM, e vice-versa, de maneira simplificada.
 A conversão retorna um resultado bem próximo, portanto, os resultados não são 100% exatos.
 
 ## Instalação
@@ -13,7 +13,7 @@ npm install coordenadas-utm
 
 ### Função 'geographicToUTM'
 
-Essa função transforma coordenadas geográficas para coordenadas UTM
+Essa função transforma coordenadas geográficas em coordenadas UTM
 
 Exemplo:
 
@@ -32,7 +32,7 @@ geographicToUTM({
 
 ### Função 'UTMToGeographic'
 
-Essa função transforma coordenadas UTM para coordenadas geográficas
+Essa função transforma coordenadas UTM em coordenadas geográficas
 
 Exemplo:
 
@@ -54,13 +54,13 @@ UTMToGeographic({
 
 ### Configurações
 
-É possível passar um objeto de configurações logo após o objeto de dados para obter um resultado mais personalizado em ambas as funções
+É possível passar um objeto de configurações em ambas as funções logo após o objeto de dados, para se obter um resultado personalizado
 
 Objeto:
 
 ```javascript
 const config = {
-  mask: "String no formato em que o dado será retornado, substituindo os colchetes pelos seus respectivos valores, ignorando o resto",
+  mask: "String no formato em que o dado será retornado, substituindo os colchetes pelos seus respectivos valores",
   fixed: "Number que define a quantidade de dígitos após o ponto decimal",
 };
 ```
