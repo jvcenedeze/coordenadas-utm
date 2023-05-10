@@ -1,6 +1,6 @@
 {
   "name": "coordenadas-utm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Converte coordenadas geográficas em UTM e vice-versa",
   "main": "index.js",
   "scripts": {
