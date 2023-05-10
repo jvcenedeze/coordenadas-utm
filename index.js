@@ -284,4 +284,5 @@ function convertUTMToGeographic(
   return { latitude: latDegree, longitude: lonDegree };
 }
 
-module.exports = { geographicToUTM, UTMToGeographic };
+module.exports.geographicToUTM = geographicToUTM;
+module.exports.UTMToGeographic = UTMToGeographic;
