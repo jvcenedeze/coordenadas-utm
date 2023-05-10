@@ -11,16 +11,22 @@ npm install coordenadas-utm
 
 ## Utilização
 
+### Importando
+
+Para realizar a importação utilize a sintaxe apropriada para o ambiente em que você está trabalhando. Neste exemplo, utilizaremos a palavra "coordenadas", que será usada nos exemplos abaixo
+
+```javascript
+const coordenadas = require("coordenadas-utm");
+// ou
+import coordenadas from "coordenadas-utm";
+```
+
 ### Função 'geographicToUTM'
 
 Essa função transforma coordenadas geográficas em coordenadas UTM
 
-Exemplo:
-
 ```javascript
-const { geographicToUTM } = require("coordenadas-utm");
-
-geographicToUTM({
+coordenadas.geographicToUTM({
   latitude: { degree: 20, minute: 14, second: 5.47 },
   longitude: { degree: 51, minute: 3, second: 30.46 },
   datum: "sad69",
@@ -34,12 +40,8 @@ geographicToUTM({
 
 Essa função transforma coordenadas UTM em coordenadas geográficas
 
-Exemplo:
-
 ```javascript
-const { UTMToGeographic } = require("coordenadas-utm");
-
-UTMToGeographic({
+coordenadas.UTMToGeographic({
   x: 493893.842883,
   y: 7762520.599209,
   datum: "sad69",
@@ -56,8 +58,6 @@ UTMToGeographic({
 
 É possível passar um objeto de configurações em ambas as funções logo após o objeto de dados, para se obter um resultado personalizado
 
-Objeto:
-
 ```javascript
 const config = {
   mask: "String no formato em que o dado será retornado, substituindo os colchetes pelos seus respectivos valores",
@@ -65,12 +65,8 @@ const config = {
 };
 ```
 
-Exemplo:
-
 ```javascript
-const { geographicToUTM, UTMToGeographic } = require("coordenadas-utm");
-
-geographicToUTM(
+coordenadas.geographicToUTM(
   {
     latitude: { degree: 20, minute: 14, second: 5.47 },
     longitude: { degree: 51, minute: 3, second: 30.46 },
@@ -87,7 +83,7 @@ geographicToUTM(
 // [x] = substitui pelo valor de X
 // [y] = substitui pelo valor de y
 
-UTMToGeographic(
+coordenadas.UTMToGeographic(
   {
     x: 493893.842883,
     y: 7762520.599209,
